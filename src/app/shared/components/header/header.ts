@@ -12,15 +12,15 @@ export class Header {
 
   constructor(private elementRef: ElementRef) {}
 
-  @HostListener('document:click', ['$event'])
-  onClickOutside(event: Event) {
-    if (!this.elementRef.nativeElement.contains(event.target) && this.isMenuOpen) {
+  @HostListener('document:click')
+  onClickOutsideMenu() {
+    if (this.isMenuOpen) {
       this.isMenuOpen = false;
     }
   }
 
   toggleMenu(event: Event) {
-    event.stopPropagation(); // Prevent the click from being caught by the document listener
+    event.stopPropagation(); 
     this.isMenuOpen = !this.isMenuOpen;
   }
 }

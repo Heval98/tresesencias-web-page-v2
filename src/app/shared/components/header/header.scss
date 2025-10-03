@@ -1,6 +1,7 @@
 .header {
   position: relative;
   display: flex;
+  margin: 5px;
 }
 
 .header-content {
@@ -87,7 +88,7 @@
       a {
         text-decoration: none;
         color: #333;
-        font-size: 1.2rem;
+        font-size: 0.9rem;
         transition: color 0.2s ease;
         display: flex;
         justify-content: center;
