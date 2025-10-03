@@ -1,22 +1,20 @@
 <section class="hero" id="home">
+  <div class="scroll-screen"></div>
   <div class="carousel-container">
-    <p-carousel [value]="products" [autoplayInterval]="3000" [numVisible]="3" [numScroll]="1" [circular]="true"
-      [responsiveOptions]="responsiveOptions" [showIndicators]="true" [showNavigators]="false"
-      aria-label="Product Carousel" aria-roledescription="Carousel of product images and details">
+    <div class="image-overlay-white-line">
+      <h5>Los únicos cocteles con textura de helado en Bogotá</h5>
+    </div>
+    <p-carousel [value]="products" [autoplayInterval]="3000" [numVisible]="1" [numScroll]="1" [circular]="true"
+      [showNavigators]="false" indicatorStyleClass="custom-indicator" aria-label="Product Carousel"
+      aria-roledescription="Carousel of product images and details">
       <ng-template let-product pTemplate="item">
         <div class="carousel-item">
           <div class="image-container">
+            <div class="overlay-description" [ngClass]="product.styleClass">
+              <h4>{{product.description}}</h4>
+              <h4>{{product.description2}}</h4>
+            </div>
             <img [src]="product.image" [alt]="product.name" class="product-image" />
-          </div>
-          <div class="product-details">
-            <h4>{{product.name}}</h4>
-            <p>{{product.description}}</p>
-            <div class="status-container">
-              <p-tag [value]="product.status" [severity]="getSeverity(product.status)"></p-tag>
-            </div>
-            <div class="button-container">
-              <p-button label="View Details" styleClass="p-button-outlined"></p-button>
-            </div>
           </div>
         </div>
       </ng-template>

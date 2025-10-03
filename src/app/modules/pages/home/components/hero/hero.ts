@@ -24,25 +24,21 @@ export class Hero {
         {
           id: '1',
           name: 'Producto de ejemplo',
-          description: 'Descripción del producto de ejemplo.',
-          image: '/assets/menudigi',
-          status: 'INSTOCK'
+          description: '¿GELATO O COCTEL?',
+          description2: 'LO MEJOR DE AMBOS MUNDOS',
+          image: '/assets/arequipe-tequila.jpg',
+          styleClass: 'right-text'
         },
         {
           id: '2',
           name: 'Producto de ejemplo',
-          description: 'Descripción del producto de ejemplo.',
-          image: '/assets/menud',
-          status: 'INSTOCK'
-        },
-        {
-          id: '3',
-          name: 'Producto de ejemplo',
-          description: 'Descripción del producto de ejemplo.',
-          image: '/assets/f',
-          status: 'INSTOCK'
+          description: '¿TIENES UN EVENTO?',
+          description2: 'NOSOTROS TE CUBRIMOS',
+          image: '/assets/foto-grupo-vasos.jpg',
+          styleClass: 'left-text'
         }
       ];
+
       this.responsiveOptions = [
           {
               breakpoint: '2000px',
