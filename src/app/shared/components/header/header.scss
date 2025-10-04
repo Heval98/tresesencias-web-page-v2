@@ -1,7 +1,9 @@
 .header {
-  position: relative;
+  position: fixed;
   display: flex;
-  margin: 5px;
+  background-color: white;
+  padding: 5px;
+  z-index: 1000;
 }
 
 .header-content {
