@@ -2,7 +2,10 @@
   position: relative;
   background: rgb(70, 68, 68);
   color: white;
+  content-visibility: auto;
+  contain-intrinsic-size: 0 400px;
   z-index: 10;
+
 
   .footer-content {
     display: flex;
