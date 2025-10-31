@@ -1,0 +1,44 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #EEE6E5;
+}
+
+.image-stack {
+  position: relative;
+  width: 100%;
+  max-width: 595px;
+}
+
+.div-overlay-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2%;
+  height: 100%;
+  pointer-events: none;
+  background-color: #EEE6E5;
+}
+
+.div-overlay-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2%;
+  pointer-events: none;
+  background-color: #EEE6E5;
+}
+
+.img-fluid {
+  width: 100%;
+  max-width: 608px;
+  height: auto;
+  max-height: 3410px;
+  display: block;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #EEE6E5;
+}
