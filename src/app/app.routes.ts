@@ -3,6 +3,9 @@ import { Home } from './modules/pages/home/home';
 import { Contact } from './modules/pages/contact/contact';
 import { Location } from './modules/pages/location/location';
 
+import { NotFound } from './modules/pages/not-found/not-found';
+import { DataPrivacy } from './modules/pages/data-privacy/data-privacy';
+
 export const routes: Routes = [
   {
     path: '',
@@ -15,5 +18,14 @@ export const routes: Routes = [
   {
     path: 'location',
     component: Location
+  },
+
+  {
+    path: 'privacy-policy',
+    component: DataPrivacy
+  },
+  {
+    path: '**',
+    component: NotFound
   }
 ];
