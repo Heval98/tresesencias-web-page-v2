@@ -88,7 +88,6 @@ export class Description implements OnInit {
   }
 
   goToContactRoute() {
-    console.log('Navigating to contact route');
     this.router.navigate(['/contact']);
   }
 
@@ -100,5 +99,9 @@ export class Description implements OnInit {
     this.items.forEach((item, i) => {
       item.isOpen = i === index ? !item.isOpen : false;
     });
+  }
+
+  routerLinkToMenu() {
+    this.router.navigate(['/menu']);
   }
 }

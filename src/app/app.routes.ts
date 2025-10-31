@@ -5,6 +5,7 @@ import { Location } from './modules/pages/location/location';
 
 import { NotFound } from './modules/pages/not-found/not-found';
 import { DataPrivacy } from './modules/pages/data-privacy/data-privacy';
+import { Menu } from './modules/pages/menu/menu';
 
 export const routes: Routes = [
   {
@@ -23,6 +24,10 @@ export const routes: Routes = [
   {
     path: 'privacy-policy',
     component: DataPrivacy
+  },
+  {
+    path: 'menu',
+    component: Menu
   },
   {
     path: '**',
