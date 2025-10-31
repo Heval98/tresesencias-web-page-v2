@@ -3,7 +3,7 @@
     <div class="image-caption-text">
       <p>Los únicos cocteles con textura de helado en Bogotá</p>
     </div>
-    <img src="/assets/hero-image.jpg" alt="Coctel congelado Tres Esencias" class="hero-image" fetchpriority="high"/>
+    <img src="/assets/hero-image.jpg" alt="Coctel congelado Tres Esencias" class="hero-image" fetchpriority="high" />
   </div>
   <div class="scroll-screen"></div>
   <div class="carousel-container">
@@ -20,7 +20,8 @@
               <h4>{{product.description}}</h4>
               <h4>{{product.description2}}</h4>
             </div>
-            <img [src]="product.image" [alt]="product.name" class="product-image" />
+            <img [src]="product.image" [alt]="product.name" class="product-image" fetchpriority="high" width="1200"
+              height="675" />
           </div>
         </div>
       </ng-template>

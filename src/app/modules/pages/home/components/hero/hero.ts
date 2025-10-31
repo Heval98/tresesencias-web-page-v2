@@ -23,7 +23,7 @@ export class Hero {
       this.products = [
         {
           id: '1',
-          name: 'Producto de ejemplo',
+          name: 'Imagen coctel congelado dulce de leche y tequila',
           description: '¿GELATO O COCTEL?',
           description2: 'LO MEJOR DE AMBOS MUNDOS',
           image: '/assets/arequipe-tequila.jpg',
@@ -31,7 +31,7 @@ export class Hero {
         },
         {
           id: '2',
-          name: 'Producto de ejemplo',
+          name: 'Foto grupal con cocteles de tresesencias',
           description: '¿TIENES UN EVENTO?',
           description2: 'NOSOTROS TE CUBRIMOS',
           image: '/assets/foto-grupo-vasos.jpg',

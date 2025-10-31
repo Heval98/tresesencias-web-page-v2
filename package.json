@@ -6,19 +6,18 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "serve-dist": "node server.js"
   },
   "prettier": {
     "printWidth": 100,
     "singleQuote": true,
-    "overrides": [
-      {
-        "files": "*.html",
-        "options": {
-          "parser": "angular"
-        }
+    "overrides": [{
+      "files": "*.html",
+      "options": {
+        "parser": "angular"
       }
-    ]
+    }]
   },
   "private": true,
   "dependencies": {
@@ -48,6 +47,7 @@
     "karma-jasmine-html-reporter": "~2.1.0",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.14",
-    "typescript": "~5.9.2"
+    "typescript": "~5.9.2",
+    "compression": "^1.7.4"
   }
 }

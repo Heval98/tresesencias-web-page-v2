@@ -1,7 +1,7 @@
 <section class="header">
   <div class="header-content">
     <div class="burger-menu">
-      <button class="burger-button" (click)="toggleMenu($event)" [class.active]="isMenuOpen">
+      <button class="burger-button" (click)="toggleMenu($event)" [class.active]="isMenuOpen" aria-label="menu button">
         <span></span>
         <span></span>
         <span></span>
@@ -16,7 +16,7 @@
       </nav>
     </div>
     <div class="logo-container" [routerLink]="'/'">
-  <img src="../../../../assets/logo-largo.png" alt="Tres Esencias Logo" />
+      <img src="../../../../assets/logo-largo.png" alt="Tres Esencias Logo" />
     </div>
     <nav class="desktop-menu-items">
       <ul>

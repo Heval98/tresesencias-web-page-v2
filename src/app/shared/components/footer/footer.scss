@@ -3,8 +3,8 @@
   background: rgb(70, 68, 68);
   color: white;
   content-visibility: auto;
-  contain-intrinsic-size: 0 400px;
-  z-index: 10;
+  contain-intrinsic-size: 0 200px;
+  z-index: 3;
 
 
   .footer-content {
@@ -98,15 +98,19 @@
       flex-direction: column;
       align-items: flex-end;
       height: 100%;
+
       .footer-email {
         display: none;
       }
+
       .footer-links {
         display: none;
       }
+
       p {
         display: none;
       }
+
       .footer-social {
         margin-top: 110px;
       }
@@ -115,10 +119,9 @@
     .warning-message {
       display: none;
     }
-    
+
     img {
       display: none;
     }
   }
 }
-
