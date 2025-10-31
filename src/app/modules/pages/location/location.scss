@@ -1,7 +1,7 @@
 
 .map-container {
-	width: 100%;
-	max-width: 600px;
+	width: 95%;
+	max-width: 870px;
 	margin: 2rem auto;
 	box-shadow: 0 2px 12px rgba(0,0,0,0.12);
 	border-radius: 12px;
@@ -10,8 +10,23 @@
 }
 
 .map-container iframe {
+	margin-top: 6.5rem;
 	display: block;
 	width: 100%;
 	height: 570px;
 	border: none;
+}
+
+@media (min-width: 1024px) {
+	.map-container {
+		width: 95%;
+		max-width: 2000px;
+	}
+
+	.map-container iframe {
+		margin-top: 10rem;
+		display: block;
+		height: 700px;
+		border: none;
+	}
 }

@@ -1,5 +1,5 @@
 .contact-form {
-	max-width: 400px;
+	max-width: 1300px;
     margin: 6.5rem auto 1rem auto;
 	padding: 2rem;
 	background: #fff;
@@ -43,4 +43,10 @@
 }
 .form-button:hover {
 	background: #a88c4a;
+}
+
+@media (min-width: 640px) {
+	.contact-form {
+		margin-top: 11rem;
+	}
 }

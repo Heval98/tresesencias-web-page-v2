@@ -87,3 +87,38 @@
     }
   }
 }
+
+@media (min-width: 1024px) {
+  .footer {
+
+    min-height: 90px;
+
+    .footer-text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      height: 100%;
+      .footer-email {
+        display: none;
+      }
+      .footer-links {
+        display: none;
+      }
+      p {
+        display: none;
+      }
+      .footer-social {
+        margin-top: 110px;
+      }
+    }
+
+    .warning-message {
+      display: none;
+    }
+    
+    img {
+      display: none;
+    }
+  }
+}
+
