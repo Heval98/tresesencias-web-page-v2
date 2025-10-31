@@ -14,23 +14,23 @@ export const routes: Routes = [
   },
   {
     path: 'contact',
-    component: Contact
+    loadChildren: () => import('./modules/pages/contact/contact.module').then(m => m.ContactModule)
   },
   {
     path: 'location',
-    component: Location
+    loadChildren: () => import('./modules/pages/location/location.module').then(m => m.LocationModule)
   },
 
   {
     path: 'privacy-policy',
-    component: DataPrivacy
+    loadChildren: () => import('./modules/pages/data-privacy/data-privacy.module').then(m => m.DataPrivacyModule)
   },
   {
     path: 'menu',
-    component: Menu
+    loadChildren: () => import('./modules/pages/menu/menu.module').then(m => m.MenuModule)
   },
   {
     path: '**',
-    component: NotFound
+    loadChildren: () => import('./modules/pages/not-found/not-found.module').then(m => m.NotFoundModule)
   }
 ];
