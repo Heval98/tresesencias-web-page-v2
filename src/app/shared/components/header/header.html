@@ -8,19 +8,15 @@
       </button>
       <nav class="menu-items" [class.open]="isMenuOpen">
         <ul>
-          <li><a href="">Menú del Bar</a></li>
-          <li><a href="#cocktail">Nuestros Cocteles</a></li>
-          <li><a href="#catering">Catering & Eventos</a></li>
-          <li><a href="#gifts">Tarjetas de Regalo</a></li>
-          <li><a href="#map">Donde Comprar</a></li>
-          <li class="last"><a href="#contact">Contacto</a></li>
+          <li><a [routerLink]="'/'">Home</a></li>
+          <li><a [routerLink]="'/menu'">Menú del Bar</a></li>
+          <li><a [routerLink]="'/location'">Donde Comprar</a></li>
+          <li class="last"><a [routerLink]="'/contact'">Contacto</a></li>
         </ul>
       </nav>
     </div>
-    <div class="logo-container">
-      <a routerLink="/">
-        <img src="../../../../assets/logo-largo.png" alt="Tres Esencias Logo" />
-      </a>
+    <div class="logo-container" [routerLink]="'/'">
+      <img src="../../../../assets/logo-largo.png" alt="Tres Esencias Logo" />
     </div>
   </div>
 </section>

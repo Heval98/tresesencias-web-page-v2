@@ -1,55 +1,45 @@
-<section id="cocktail" class="description">
-  <div class="vertical-description">
-    <h1>
-      COCTELES QUE SE COMEN COMO GELATO:
-    </h1>
-    <P>
-      En Tresesencias creemos que cada sabor debe contar una historia.
-      Nuestros cocteles congelados están diseñados para sorprender el paladar y
-      despertar emociones.
-    </P>
-    <p>
-      Una propuesta única para quienes buscan elevar cada momento con sabores
-      diferentes a tu Gelato de toda la vida y el estilo que buscabas.
-    </p>
-
-    <h1>
-      COCTELES QUE SE COMEN COMO GELATO:
-    </h1>
-    <P>
-      En Tresesencias creemos que cada sabor debe contar una historia.
-      Nuestros cocteles congelados están diseñados para sorprender el paladar y
-      despertar emociones.
-    </P>
-    <p>
-      Una propuesta única para quienes buscan elevar cada momento con sabores
-      diferentes a tu Gelato de toda la vida y el estilo que buscabas.
-    </p>
-
-    <h1>
-      COCTELES QUE SE COMEN COMO GELATO:
-    </h1>
-    <P>
-      En Tresesencias creemos que cada sabor debe contar una historia.
-      Nuestros cocteles congelados están diseñados para sorprender el paladar y
-      despertar emociones.
-    </P>
-    <p>
-      Una propuesta única para quienes buscan elevar cada momento con sabores
-      diferentes a tu Gelato de toda la vida y el estilo que buscabas.
-    </p>
-  </div>
-  <div class="horizontal-slider">
-    <div class="small-intro">
-      <h1>Nuestros Cocteles</h1>
-      <p>Tus cocteles favoritos de toda la vida, convertidos en un gelato
-        delicioso para que disfrutes en cualquier momento del día.
-      </p>
+<div class="description">
+  <div class="accordion-container">
+    <button class="menu-button">
+      <h1>Menu</h1>
+    </button>
+    <div *ngFor="let item of items; let i = index" class="accordion-item">
+      <section [id]="item.sectionId">
+        <button 
+          class="accordion-header" 
+          (click)="toggleSingle(i)"
+          [class.active]="item.isOpen">
+          <title>{{item.metaTitle}}</title>
+          <meta [name]="item.sectionId" content="{{item.metaContent}}">
+          <h1>{{item.title}}</h1>
+        </button>
+        <div 
+          class="accordion-content-wrapper"
+          [@slideDown]="item.isOpen ? 'open' : 'closed'">
+          <div class="accordion-content">
+            <p [innerHTML]="item.mainContent"></p>
+            <p [innerHTML]="item.auxContent"></p>
+            <ng-container *ngIf="item.sectionId === 'catering-eventos'">
+              <a routerLink="/contact" class="google-review-link" rel="noopener">¡Quiero cocteles!</a>
+            </ng-container>
+          </div>
+        </div>
+      </section>
     </div>
-    <div class="cocktail-container" *ngFor="let cocktail of cocktails">
-      <div class="cocktail-card">
-        <img [src]="cocktail.image" alt="{{ cocktail.name }}">
+  </div>
+  <section id="galeria">
+    <div class="horizontal-slider">
+      <div class="small-intro">
+        <h1>Nuestros Cocteles</h1>
+        <p>Tus cocteles favoritos de toda la vida, convertidos en un gelato
+          delicioso para que disfrutes en cualquier momento del día.
+        </p>
+      </div>
+      <div class="cocktail-container" *ngFor="let cocktail of cocktails">
+        <div class="cocktail-card">
+          <img [src]="cocktail.image" alt="{{ cocktail.name }}">
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+</div>
