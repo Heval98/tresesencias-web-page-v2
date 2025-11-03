@@ -9,9 +9,10 @@ h1 {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-top: 100px;
+  margin-top: 90px;
   padding-top: 15px;
-  z-index: 3;
+  min-height: 600px;
+  width: 100%;
 }
 
 .vertical-description {
@@ -22,6 +23,8 @@ h1 {
   padding: 1rem 0 2rem 1rem;
   display: flex;
   overflow-x: auto;
+  height: 220px;
+  width: 100%;
 
   .cocktail-container {
     display: flex;
@@ -47,6 +50,7 @@ h1 {
     img {
       width: 150px;
       height: 150px;
+      display: block;
       object-fit: cover;
       border-radius: 10px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -117,6 +121,7 @@ h1 {
 
 .accordion-content-wrapper {
   overflow: hidden;
+  min-height: 6px;
 }
 
 .accordion-content {
