@@ -5,17 +5,12 @@
     </button>
     <div *ngFor="let item of items; let i = index" class="accordion-item">
       <section [id]="item.sectionId">
-        <button 
-          class="accordion-header" 
-          (click)="toggleSingle(i)"
-          [class.active]="item.isOpen">
+        <button class="accordion-header" (click)="toggleSingle(i)" [class.active]="item.isOpen">
           <title>{{item.metaTitle}}</title>
           <meta [name]="item.sectionId" content="{{item.metaContent}}">
           <h1>{{item.title}}</h1>
         </button>
-        <div 
-          class="accordion-content-wrapper"
-          [@slideDown]="item.isOpen ? 'open' : 'closed'">
+        <div class="accordion-content-wrapper" [@slideDown]="item.isOpen ? 'open' : 'closed'">
           <div class="accordion-content">
             <p [innerHTML]="item.mainContent"></p>
             <p [innerHTML]="item.auxContent"></p>
@@ -37,7 +32,11 @@
       </div>
       <div class="cocktail-container" *ngFor="let cocktail of cocktails">
         <div class="cocktail-card">
-          <img [src]="cocktail.image" alt="{{ cocktail.name }}" width="150" height="150">
+          <picture>
+            <source [srcset]="cocktail.imageWebp" type="image/webp">
+            <source [srcset]="cocktail.image" type="image/jpeg">
+            <img [src]="cocktail.image" alt="{{ cocktail.name }}" width="150" height="150">
+          </picture>
         </div>
       </div>
     </div>

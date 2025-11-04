@@ -78,11 +78,13 @@ export class Description implements OnInit {
     this.cocktails = [
       {
         name: 'Dulce de leche y Tequila',
-        image: 'assets/arequipe-tequila.jpg'
+        image: 'assets/arequipe-tequila.jpg',
+        imageWebp: 'assets/arequipe-tequila.webp'
       },
       {
         name: 'Chocolate Tequila',
-        image: 'assets/chocolate-tequila.jpg'
+        image: 'assets/chocolate-tequila.jpg',
+        imageWebp: 'assets/chocolate-tequila.webp'
       }
     ];
   }

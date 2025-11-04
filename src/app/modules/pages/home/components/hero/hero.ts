@@ -27,6 +27,7 @@ export class Hero {
           description: '¿GELATO O COCTEL?',
           description2: 'LO MEJOR DE AMBOS MUNDOS',
           image: '/assets/arequipe-tequila.jpg',
+          imageWebp: '/assets/arequipe-tequila.webp',
           styleClass: 'right-text'
         },
         {
@@ -35,6 +36,7 @@ export class Hero {
           description: '¿TIENES UN EVENTO?',
           description2: 'NOSOTROS TE CUBRIMOS',
           image: '/assets/foto-grupo-vasos.jpg',
+          imageWebp: '/assets/foto-grupo-vasos.webp',
           styleClass: 'left-text'
         }
       ];

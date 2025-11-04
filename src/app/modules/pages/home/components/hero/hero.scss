@@ -107,7 +107,6 @@
       .hero-image {
         width: 100%;
         height: auto;
-        aspect-ratio: 16/9;
         display: block;
         object-fit: cover;
       }
@@ -147,13 +146,13 @@
       }
 
       .hero-image {
-        max-width: 2000px;
+        max-width: 100%;
+        max-height: 2000px;
         height: auto;
-        max-height: 900px;
         object-fit: cover;
-        margin-top: 2.5rem;
-        left: 0;
-        right: 0;
+        margin: 2.5rem auto;
+        display: block;
+        border-radius: 10px;
       }
     }
 
