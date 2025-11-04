@@ -163,9 +163,10 @@
 
       .hero-image {
         max-width: 2000px;
+        width: 100%;
         height: auto;
         object-fit: cover;
-        margin: 0 auto 2.5rem auto;
+        margin: 0 auto;
         display: block;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
