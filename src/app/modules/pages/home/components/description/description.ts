@@ -56,8 +56,12 @@ export class Description implements OnInit {
       metaTitle: 'Sobre Tresesencias – Bar elegante y relajado en Bogotá',
       metaContent: 'Bar elegante y relajado en Bogotá',
       title: 'Sobre Nosotros',
-      mainContent: 'En <strong>Tresesencias</strong>, tres amigos decidimos reinventar la experiencia de bar. Combinamos lo clásico —buen ambiente, cervezas, tragos y botellas— con una propuesta innovadora: <strong>cocteles cremosos</strong> que transforman el sabor en una experiencia sensorial.',
-      auxContent: 'Somos un bar en Bogotá, con un ambiente elegante, minimalista y relajado, pensado para que disfrutes entre amigos sin perder el estilo.',
+      mainContent: `Tres esencias. Tres almas. Un mismo sueño. <br> <br> <strong>Tresesencias</strong> nació de una conversación entre primos, una chispa entre risas, helado y algo de tequila. 
+      Queríamos crear un lugar donde el sabor tuviera sentido, donde cada bocado contara una historia, y donde lo inesperado se volviera cotidiano. <br> <br>
+      Así nació nuestro concepto: cócteles congelados para comer. Textura de helado, alma de trago. Una experiencia para adultos que buscan algo diferente, con estética, con propósito, y con identidad.`,
+      auxContent: `Somos una mezcla de creatividad, intuición y ritmo. Tres personas que le pusieron nombre a su idea, y esencia a su bar. Valoramos lo auténtico, lo que se siente bien, lo que se ve bien, y lo que te deja con ganas de volver. <br> <br>
+      Esto no es solo un bar. Es un manifiesto de sabor. Es arte comestible. Es un espacio para vibrar distinto. <br> <br>
+      Bienvenidx a <strong>Tresesencias</strong>.`,
       isOpen: false
     },
     {
@@ -66,7 +70,7 @@ export class Description implements OnInit {
       metaContent: 'Tu opinión cuenta – Reseñas de Tresesencias',
       title: 'Opina',
       mainContent: '¿Ya nos visitaste? Cuéntanos cómo te fue y ayuda a otros a descubrir este nuevo concepto. Tu opinión nos motiva a seguir ofreciendo lo mejor de nosotros.',
-      auxContent: '<a href="https://g.page/r/tu-enlace-de-google-maps" target="_blank" class="google-review-link" rel="noopener">Califícanos en Google</a>',
+      auxContent: '<div class="google-review-container"><a href="https://g.page/r/tu-enlace-de-google-maps" target="_blank" class="google-review-link" rel="noopener">Califícanos en Google</a></div>',
       isOpen: false
     }
   ];

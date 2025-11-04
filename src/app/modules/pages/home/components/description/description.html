@@ -15,7 +15,9 @@
             <p [innerHTML]="item.mainContent"></p>
             <p [innerHTML]="item.auxContent"></p>
             <ng-container *ngIf="item.sectionId === 'catering-eventos'">
-              <a routerLink="/contact" class="google-review-link" rel="noopener">¡Quiero cocteles!</a>
+              <div class="google-review-container">
+                <a routerLink="/contact" class="google-review-link" rel="noopener">¡Quiero cocteles!</a>
+              </div>
             </ng-container>
           </div>
         </div>
@@ -35,7 +37,7 @@
           <picture>
             <source [srcset]="cocktail.imageWebp" type="image/webp">
             <source [srcset]="cocktail.image" type="image/jpeg">
-            <img [src]="cocktail.image" alt="{{ cocktail.name }}" width="150" height="150">
+            <img [src]="cocktail.image" alt="{{ cocktail.name }}" width="150" height="150" loading="lazy">
           </picture>
         </div>
       </div>

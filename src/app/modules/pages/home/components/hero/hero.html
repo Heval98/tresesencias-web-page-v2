@@ -1,24 +1,23 @@
 <section class="hero" id="home">
   <div class="static-hero">
     <div class="image-caption-text">
-      <p>Los únicos cocteles con textura de helado en Bogotá</p>
+      <div class="text-container">
+        <p>Los únicos cocteles con textura de helado en Bogotá</p>
+      </div>
     </div>
-    <picture class="hero-image">
-      <source srcset="/assets/hero-image.webp" type="image/webp">
-      <source srcset="/assets/hero-image.jpg" type="image/jpeg">
-      <img src="/assets/hero-image.jpg" class="hero-image" alt="Coctel congelado Tres Esencias" fetchpriority="high" />
+    <picture>
+      <source [srcset]="heroImageWebp" type="image/webp">
+      <source [srcset]="heroImage" type="image/jpeg">
+      <img [src]="heroImage" class="hero-image" alt="Coctel congelado Tres Esencias" fetchpriority="high" width="2000"  />
     </picture>
   </div>
-  <div class="scroll-screen"></div>
   <div class="carousel-container">
     <div class="image-overlay-white-line">
       <h5>Los únicos cocteles con textura de helado en Bogotá</h5>
     </div>
-    <p-carousel [value]="products" [autoplayInterval]="3000" [numVisible]="1" [numScroll]="1" [circular]="true"
-      [showNavigators]="false" indicatorStyleClass="custom-indicator" aria-label="Product Carousel"
-      aria-roledescription="Carousel of product images and details">
-      <ng-template let-product pTemplate="item">
-        <div class="carousel-item">
+    <div class="custom-carousel" aria-label="Product Carousel" aria-roledescription="Carousel of product images and details">
+      <div class="carousel-track" [style.transform]="'translateX(-' + (currentSlide * 100) + '%)'">
+        <div class="carousel-item" *ngFor="let product of products; let i = index">
           <div class="image-container">
             <div class="overlay-description" [ngClass]="product.styleClass">
               <h4>{{product.description}}</h4>
@@ -27,12 +26,14 @@
             <picture>
               <source [srcset]="product.imageWebp" type="image/webp">
               <source [srcset]="product.image" type="image/jpeg">
-              <img [src]="product.image" [alt]="product.name" class="product-image" fetchpriority="high" width="1200"
-                height="675" />
+              <img [src]="product.image" [alt]="product.name" class="product-image" fetchpriority="high" width="1200" height="675" loading="lazy"/>
             </picture>
           </div>
         </div>
-      </ng-template>
-    </p-carousel>
+      </div>
+      <div class="carousel-indicators">
+        <span *ngFor="let product of products; let i = index" class="carousel-dot" [class.active]="i === currentSlide" (click)="goToSlide(i)"></span>
+      </div>
+    </div>
   </div>
 </section>
