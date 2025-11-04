@@ -1,9 +1,16 @@
+<div class="menu-tabs">
+  <button *ngFor="let section of sections; let i = index"
+          [class.active]="selectedSectionIndex === i"
+          (click)="selectSection(i)">
+    {{ section.name }}
+  </button>
+</div>
 <div class="container">
   <div class="image-stack">
     <picture>
-      <source srcset="/assets/menudigital.webp" type="image/webp">
-      <source srcset="/assets/menudigital.jpg" type="image/jpeg">
-      <img src="/assets/menudigital.jpg" alt="Menu digital" class="img-fluid" loading="lazy">
+      <source [srcset]="sections[selectedSectionIndex].webpFile" class="img-fluid" type="image/webp">
+      <source [srcset]="sections[selectedSectionIndex].image" class="img-fluid" type="image/jpeg">
+      <img [src]="sections[selectedSectionIndex].image" [alt]="sections[selectedSectionIndex].name" class="img-fluid" loading="lazy" />
     </picture>
     <div class="div-overlay-right"></div>
     <div class="div-overlay-top"></div>

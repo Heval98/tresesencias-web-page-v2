@@ -1,15 +1,25 @@
-<form class="contact-form">
+<form #contactForm class="contact-form" method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLScDLZ8s0L_czIItfJ6KKeUDeS60DrWq94Tbf1AtHNd8h7Z9Ug/formResponse" target="_blank" (ngSubmit)="onSubmit()">
 	<div class="form-group">
-		<label for="name">Nombre</label>
-		<input id="name" name="name" type="text" class="form-input" required />
+ 	<label for="entry.2005620554">Nombre</label>
+ 	<input id="entry.2005620554" name="entry.2005620554" type="text" class="form-input" required />
 	</div>
 	<div class="form-group">
-		<label for="email">Correo electrónico</label>
-		<input id="email" name="email" type="email" class="form-input" required />
+ 	<label for="entry.1045781291">Correo electrónico</label>
+ 	<input id="entry.1045781291" name="entry.1045781291" type="email" class="form-input" required />
 	</div>
 	<div class="form-group">
-		<label for="message">Mensaje</label>
-		<textarea id="message" name="message" rows="4" class="form-input" required></textarea>
+ 	<label for="entry.1065046570">Empresa</label>
+ 	<input id="entry.1065046570" name="entry.1065046570" type="text" class="form-input" />
 	</div>
-	<button type="submit" class="form-button">Enviar</button>
-</form>
+	<div class="form-group">
+ 	<label for="entry.1166974658">Teléfono</label>
+ 	<input id="entry.1166974658" name="entry.1166974658" type="tel" class="form-input" />
+	</div>
+	<div class="form-group">
+ 	<label for="entry.839337160">Mensaje</label>
+ 	<textarea id="entry.839337160" name="entry.839337160" rows="4" class="form-input" required></textarea>
+	</div>
+	<button (click)="onSubmit()" type="submit" class="form-button">Enviar</button>
+<div style="background: #fffbe6; border: 1px solid #ffe58f; color: #ad8b00; padding: 1rem; border-radius: 6px; margin-bottom: 1.5rem; font-size: 1rem;">
+  <strong>Nota:</strong> Este formulario utiliza Google Forms. La información se enviará usando tu cuenta activa de Google en este navegador.
+</div>
