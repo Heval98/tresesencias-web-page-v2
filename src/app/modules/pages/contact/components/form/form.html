@@ -1,4 +1,4 @@
-<form class="contact-form" method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLScDLZ8s0L_czIItfJ6KKeUDeS60DrWq94Tbf1AtHNd8h7Z9Ug/formResponse" target="_blank">
+<form #contactForm class="contact-form" method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLScDLZ8s0L_czIItfJ6KKeUDeS60DrWq94Tbf1AtHNd8h7Z9Ug/formResponse" target="_blank" (ngSubmit)="onSubmit()">
 	<div class="form-group">
  	<label for="entry.2005620554">Nombre</label>
  	<input id="entry.2005620554" name="entry.2005620554" type="text" class="form-input" required />
@@ -19,8 +19,7 @@
  	<label for="entry.839337160">Mensaje</label>
  	<textarea id="entry.839337160" name="entry.839337160" rows="4" class="form-input" required></textarea>
 	</div>
-	<button type="submit" class="form-button">Enviar</button>
+	<button (click)="onSubmit()" type="submit" class="form-button">Enviar</button>
 <div style="background: #fffbe6; border: 1px solid #ffe58f; color: #ad8b00; padding: 1rem; border-radius: 6px; margin-bottom: 1.5rem; font-size: 1rem;">
   <strong>Nota:</strong> Este formulario utiliza Google Forms. La información se enviará usando tu cuenta activa de Google en este navegador.
 </div>
-<form class="contact-form" method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLScDLZ8s0L_czIItfJ6KKeUDeS60DrWq94Tbf1AtHNd8h7Z9Ug/formResponse" id="contactForm">
