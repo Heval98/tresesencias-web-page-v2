@@ -1,7 +1,9 @@
 <div class="menu-tabs">
-  <button *ngFor="let section of sections; let i = index"
-          [class.active]="selectedSectionIndex === i"
-          (click)="selectSection(i)">
+  <button [routerLink]="'/'" class="home-btn" aria-label="Home">
+    <mat-icon>home</mat-icon>
+  </button>
+  <button *ngFor="let section of sections; let i = index" [class.active]="selectedSectionIndex === i"
+    (click)="selectSection(i)">
     {{ section.name }}
   </button>
 </div>
@@ -10,7 +12,8 @@
     <picture>
       <!-- <source [srcset]="sections[selectedSectionIndex].webpFile" class="img-fluid" type="image/webp">
       <source [srcset]="sections[selectedSectionIndex].image" class="img-fluid" type="image/png"> -->
-      <img alt="Imagen menu" [src]="sections[selectedSectionIndex].image" [alt]="sections[selectedSectionIndex].name" class="img-fluid" loading="lazy" />
+      <img alt="Imagen menu" [src]="sections[selectedSectionIndex].image" [alt]="sections[selectedSectionIndex].name"
+        class="img-fluid" loading="lazy" />
     </picture>
   </div>
 </div>

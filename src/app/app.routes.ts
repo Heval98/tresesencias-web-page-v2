@@ -13,7 +13,7 @@ export const routes: Routes = [
   },
   {
     path: 'contact',
-    loadChildren: () => import('./modules/pages/contact/contact').then(m => m.Contact)
+     loadComponent: () => import('./modules/pages/contact/contact').then(m => m.Contact)
   },
   {
     path: 'location',

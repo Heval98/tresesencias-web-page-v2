@@ -1,10 +1,12 @@
 .cocktails-container {
   margin-top: 150px;
   padding: 2rem;
+
   h1 {
     text-align: center;
     margin-bottom: 2rem;
   }
+
   .cocktails-list {
     display: flex;
     flex-wrap: wrap;
@@ -12,25 +14,30 @@
     margin: 0 5.5rem;
     justify-content: center;
   }
+
   .cocktail-card {
     background: #fff;
     border-radius: 1rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     padding: 1.5rem;
     width: 260px;
     text-align: center;
     transition: transform 0.2s;
+
     &:hover {
       transform: translateY(-8px) scale(1.03);
-      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
     }
+
     h2 {
       margin-bottom: 0.5rem;
       color: #70472f;
     }
+
     p {
       color: #555;
     }
+
     img {
       width: 250px;
       height: auto;
@@ -39,6 +46,7 @@
     }
   }
 }
+
 // Modal styles
 .modal-backdrop {
   position: fixed;
@@ -50,7 +58,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 10;
+  z-index: 1000;
 }
 
 .modal-content {
@@ -59,7 +67,7 @@
   padding: 2rem 1.5rem 1.5rem 1.5rem;
   max-width: 95vw;
   width: 400px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
   position: relative;
   text-align: center;
   display: flex;
@@ -99,32 +107,38 @@
     padding: 0.5rem;
     margin-top: 120px;
   }
+
   .cocktails-list {
     flex-direction: column;
     gap: 1.2rem;
     margin: 0;
     align-items: center;
   }
+
   .cocktail-card {
     width: 95vw;
     max-width: 300px;
     padding: 1rem;
   }
+
   .cocktail-card img {
     width: 90vw;
     max-width: 300px;
   }
+
   .modal-content {
     width: 95vw;
     max-width: 300px;
     padding: 1.2rem 0.5rem 1rem 0.5rem;
   }
+
   .modal-img {
     width: 90vw;
     max-width: 260px;
   }
 }
-@media (max-width: 640px) {
+
+@media (max-width: 300px) {
   .cocktails-container {
     padding: 0.5rem;
     margin-top: 80px;
