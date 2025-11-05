@@ -70,7 +70,7 @@ export class Description implements OnInit {
       metaContent: 'Tu opinión cuenta – Reseñas de Tresesencias',
       title: 'Opina',
       mainContent: '¿Ya nos visitaste? Cuéntanos cómo te fue y ayuda a otros a descubrir este nuevo concepto. Tu opinión nos motiva a seguir ofreciendo lo mejor de nosotros.',
-      auxContent: '<div class="google-review-container"><a href="https://g.page/r/tu-enlace-de-google-maps" target="_blank" class="google-review-link" rel="noopener">Califícanos en Google</a></div>',
+      auxContent: '<div class="google-review-container"><a href="https://search.google.com/local/writereview?placeid=ChIJFSx43aSbP44R6_xM6AFk5YE&source=g.page.m.nr._&laa=nmx-review-solicitation-recommendation-card" target="_blank" class="google-review-link" rel="noopener">Califícanos en Google</a></div>',
       isOpen: false
     }
   ];
@@ -109,5 +109,9 @@ export class Description implements OnInit {
 
   routerLinkToMenu() {
     this.router.navigate(['/menu']);
+  }
+
+  routerLinkToCocktails() {
+    this.router.navigate(['/cocktails']);
   }
 }

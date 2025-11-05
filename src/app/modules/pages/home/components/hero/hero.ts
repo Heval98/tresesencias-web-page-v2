@@ -37,21 +37,26 @@ export class Hero {
     this.products = [
       {
         id: '1',
-        name: 'Imagen coctel congelado dulce de leche y tequila',
-        description: '¿GELATO O COCTEL?',
-        description2: 'LO MEJOR DE AMBOS MUNDOS',
-        image: '/assets/arequipe-tequila.jpg',
-        imageWebp: '/assets/arequipe-tequila.webp',
-        styleClass: 'right-text'
+        name: 'Sabores primer plano',
+        // description: '¿GELATO O COCTEL?',
+        // description2: 'LO MEJOR DE AMBOS MUNDOS',
+        image: '/assets/Carrusel-1.jpg',
+        // imageWebp: '/assets/arequipe-tequila.webp',
+        // styleClass: 'right-text'
       },
       {
         id: '2',
-        name: 'Foto grupal con cocteles de tresesencias',
-        description: '¿TIENES UN EVENTO?',
-        description2: 'NOSOTROS TE CUBRIMOS',
-        image: '/assets/foto-grupo-vasos.jpg',
-        imageWebp: '/assets/foto-grupo-vasos.webp',
-        styleClass: 'left-text'
+        name: 'Sabores y numero tres con la mano',
+        // description: '¿TIENES UN EVENTO?',
+        // description2: 'NOSOTROS TE CUBRIMOS',
+        image: '/assets/Carrusel-2.jpg',
+        // imageWebp: '/assets/foto-grupo-vasos.webp',
+        // styleClass: 'left-text'
+      },
+      {
+        id: '3',
+        name: 'Brindis de cocteles',
+        image: '/assets/Carrusel-3.jpg',
       }
     ];
 

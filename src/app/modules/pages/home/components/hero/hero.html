@@ -19,14 +19,14 @@
       <div class="carousel-track" [style.transform]="'translateX(-' + (currentSlide * 100) + '%)'">
         <div class="carousel-item" *ngFor="let product of products; let i = index">
           <div class="image-container">
-            <div class="overlay-description" [ngClass]="product.styleClass">
+            <!-- <div class="overlay-description" [ngClass]="product.styleClass">
               <h4>{{product.description}}</h4>
               <h4>{{product.description2}}</h4>
-            </div>
+            </div> -->
             <picture>
-              <source [srcset]="product.imageWebp" type="image/webp">
-              <source [srcset]="product.image" type="image/jpeg">
-              <img [src]="product.image" [alt]="product.name" class="product-image" fetchpriority="high" width="1200" height="675" loading="lazy"/>
+              <!-- <source [srcset]="product.imageWebp" type="image/webp">
+              <source [srcset]="product.image" type="image/jpeg"> -->
+              <img [src]="product.image" [alt]="product.name" class="product-image" fetchpriority="high" width="700" height="1050" loading="lazy"/>
             </picture>
           </div>
         </div>

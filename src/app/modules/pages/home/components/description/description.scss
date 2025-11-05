@@ -9,7 +9,7 @@ h1 {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-top: 115px;
+  margin-top: 255px;
   padding-top: 15px;
   min-height: 400px;
   width: 100%;
@@ -70,6 +70,18 @@ h1 {
 
     h1 {
       font-size: 2rem;
+    }
+  }
+
+  .cocktails-button {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+
+    h1 {
+      font-size: 1.6rem;
     }
   }
 
@@ -162,7 +174,7 @@ h1 {
     min-height: 380px;
   }
 
-  #galeria {
-    display: none;
-  }
+  // #galeria {
+  //   display: none;
+  // }
 }
