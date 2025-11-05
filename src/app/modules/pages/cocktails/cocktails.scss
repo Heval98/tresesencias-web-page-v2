@@ -111,7 +111,7 @@
   .cocktails-list {
     flex-direction: column;
     gap: 1.2rem;
-    margin: 0;
+    margin: 0 !important;
     align-items: center;
   }
 
@@ -138,7 +138,7 @@
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 500px) {
   .cocktails-container {
     padding: 0.5rem;
     margin-top: 80px;
