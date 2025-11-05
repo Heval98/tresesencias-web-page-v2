@@ -1,9 +1,20 @@
 <div class="cocktails-container">
-  <h1>Cocktails</h1>
+  <h1>Nuestros Cocteles</h1>
   <div class="cocktails-list">
-    <div class="cocktail-card" *ngFor="let cocktail of cocktails">
+    <div class="cocktail-card" *ngFor="let cocktail of cocktails" (click)="openModal(cocktail)">
       <h2>{{ cocktail.name }}</h2>
       <p>{{ cocktail.description }}</p>
+      <img [src]="cocktail.image" alt="{{ cocktail.name }}">
+    </div>
+  </div>
+
+  <!-- Modal Popup -->
+  <div class="modal-backdrop" *ngIf="selectedCocktail" (click)="closeModal()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <button class="close-btn" (click)="closeModal()">&times;</button>
+      <h2>{{ selectedCocktail.name }}</h2>
+      <img class="modal-img" [src]="selectedCocktail.image" alt="{{ selectedCocktail.name }}">
+      <p class="modal-description">{{ selectedCocktail.altDescription || 'Descripción del coctel.' }}</p>
     </div>
   </div>
 </div>

@@ -1,17 +1,19 @@
 
+
+
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { CocktailsComponent } from './cocktails';
+import { COCKTAILS_ROUTES } from './cocktails.routes';
 
 @NgModule({
-	imports: [
-		CommonModule,
-		RouterModule
-		// Add child modules here, e.g. FlavorsModule
-	],
-	declarations: [
-		// Add CocktailsComponent here if you create one
-	]
+			imports: [
+				CommonModule,
+				RouterModule.forChild(COCKTAILS_ROUTES),
+				CocktailsComponent
+				// Add child modules here, e.g. FlavorsModule
+			]
 })
 export class CocktailsModule {}
 

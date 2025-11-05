@@ -13,13 +13,16 @@ export const routes: Routes = [
   },
   {
     path: 'contact',
-    loadChildren: () => import('./modules/pages/contact/contact.module').then(m => m.ContactModule)
+    loadChildren: () => import('./modules/pages/contact/contact').then(m => m.Contact)
   },
   {
     path: 'location',
     loadChildren: () => import('./modules/pages/location/location.module').then(m => m.LocationModule)
   },
-
+  {
+    path: 'cocktails',
+    loadChildren: () => import('./modules/pages/cocktails/cocktails.module').then(m => m.CocktailsModule)
+  },
   {
     path: 'privacy-policy',
     loadChildren: () => import('./modules/pages/data-privacy/data-privacy.module').then(m => m.DataPrivacyModule)
